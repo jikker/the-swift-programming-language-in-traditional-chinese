@@ -285,7 +285,7 @@ returnFifteen()
 函式是第一等型別（first-class type），這意味著函式可以作為另一個函式的回傳值。
 
 ```swift
-func makeIncrementer() -> (Int -> Int) {
+func makeIncrementer() -> ((Int) -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
     }
